@@ -1,14 +1,18 @@
 import React from 'react'
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import CreateIcon from '@mui/icons-material/Create';
+import DeleteOutlineSharpIcon from '@mui/icons-material/DeleteOutlineSharp';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div className="mt-5">
       <div className="container">
-        <div className="add_btn mt-2">
-          <button className='btn btn-primary'>Add data</button>
+        <div className="add_btn mt-2 mb-2">
+          <NavLink to="/register" className='btn btn-primary'>Add data</NavLink>
         </div>
 
-        <table class="table">
+        <table className="table">
           <thead>
             <tr className="table-dark">
               <th scope="col">id</th>
@@ -26,8 +30,22 @@ const Home = () => {
               <td>meet@gmail.com</td>
               <td>@Webdeveloper</td>
               <td>9191919191919</td>
-              <td>
-
+              <td className="d-flex justify-content-between">
+                <button className="btn btn-success"><RemoveRedEyeIcon /></button>
+                <button className="btn btn-primary"><CreateIcon /></button>
+                <button className="btn btn-danger"><DeleteOutlineSharpIcon /></button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>meet</td>
+              <td>meet@gmail.com</td>
+              <td>@Webdeveloper</td>
+              <td>9191919191919</td>
+              <td className="d-flex justify-content-between">
+                <button className="btn btn-success"><RemoveRedEyeIcon /></button>
+                <button className="btn btn-primary"><CreateIcon /></button>
+                <button className="btn btn-danger"><DeleteOutlineSharpIcon /></button>
               </td>
             </tr>
             {/* <tr>

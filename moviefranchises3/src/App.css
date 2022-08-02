@@ -27,7 +27,10 @@
   font-weight: 400;
 }
 
-/* .App {
+
+
+/* Default */
+.App {
   text-align: center;
 }
 
@@ -65,4 +68,3 @@
     transform: rotate(360deg);
   }
 }
- */
